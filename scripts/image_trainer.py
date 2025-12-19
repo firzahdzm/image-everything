@@ -158,20 +158,11 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
 
         if lrs_settings:
             for optional_key in [
-                "max_grad_norm",
-                "prior_loss_weight",
-                "max_train_epochs",
-                "train_batch_size",
+                "max_train_steps",
+                "network_alpha",
                 "optimizer_args",
                 "unet_lr",
                 "text_encoder_lr",
-                "noise_offset",
-                "min_snr_gamma",
-                "seed",
-                "lr_warmup_steps",
-                "loss_type",
-                "huber_c",
-                "huber_schedule",
             ]:
                 if optional_key in lrs_settings:
                     config[optional_key] = lrs_settings[optional_key]
