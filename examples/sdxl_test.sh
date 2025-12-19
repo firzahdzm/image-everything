@@ -1,13 +1,13 @@
 #!/bin/bash
 
-TASK_ID="22ebbb53-d08d-487b-85aa-ba1a8e283763"
-MODEL="GraydientPlatformAPI/realism-engine2-xl"
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/0b33823542ad8d23_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251204%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251204T055508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e2310be8de5747d83be529a2ef2eb073e3a97bc794fe3c3d9c51947c37c3a46b"
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="22ebbb53-d08d-487b-85aa-ba1a8e283763-repo1"
+EXPECTED_REPO_NAME=""
 
-HUGGINGFACE_TOKEN="Your Huggingface Token"
-HUGGINGFACE_USERNAME="Your Huggingface Username"
+HUGGINGFACE_TOKEN=""
+HUGGINGFACE_USERNAME=""
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"

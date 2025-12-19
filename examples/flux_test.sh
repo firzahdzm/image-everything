@@ -1,13 +1,13 @@
 #!/bin/bash
 
-TASK_ID="8ca9bf70-4aed-4f65-b7ce-d9c71eb6fd8f"
-MODEL="zenless-lab/sdxl-anima-pencil-xl-v5"
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/31b25bb60adc3009_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251204%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251204T081100Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=75743ae5c0b1d083b77b998e56e336e05ccbce50a9175f676a64416a7f291b41"
-MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="8ca9bf70-4aed-4f65-b7ce-d9c71eb6fd8f-repo1"
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
+MODEL_TYPE="flux"
+EXPECTED_REPO_NAME=""
 
-HUGGINGFACE_TOKEN="Your Huggingface Token"
-HUGGINGFACE_USERNAME="Your Huggingface Username"
+HUGGINGFACE_TOKEN=""
+HUGGINGFACE_USERNAME=""
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"
