@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="d89833dd-a5a5-4400-b13f-3bdb092daf45"
-MODEL="mikeyandfriends/PixelWave_FLUX.1-dev_03"
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/8c1b7768a505f2ca_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251214%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251214T084338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0059dca197cea926fdc5420716da60eebbb7b9f2d01176f64134c026cddb7634"
-MODEL_TYPE="flux"
-EXPECTED_REPO_NAME="test_flux-1"
+TASK_ID="48571015-075e-4c6e-a38f-c70007cf81d5"
+MODEL="ehristoforu/Visionix-alpha"
+DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/c2b9a00bfc91f2db_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251214%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251214T033158Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b7b79bea614a4658df8cbed17d84ebc341a4af46a483dd0a9aea7e831f72655e"
+MODEL_TYPE="sdxl"
+EXPECTED_REPO_NAME="test_person-1"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
