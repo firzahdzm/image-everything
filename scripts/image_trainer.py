@@ -12,8 +12,6 @@ import time
 import yaml
 import toml
 
-
-# Add project root to python path to import modules
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
 sys.path.append(project_root)
@@ -33,7 +31,6 @@ def get_model_path(path: str) -> str:
             return os.path.join(path, files[0])
     return path
 def merge_model_config(default_config: dict, model_config: dict) -> dict:
-    """Merge default config with model-specific overrides."""
     merged = {}
 
     if isinstance(default_config, dict):
@@ -45,7 +42,6 @@ def merge_model_config(default_config: dict, model_config: dict) -> dict:
     return merged if merged else None
 
 def count_images_in_directory(directory_path: str) -> int:
-    """Count the number of image files in a directory"""
     image_extensions = {'.jpg', '.jpeg', '.png', '.webp', '.bmp', '.gif'}
     count = 0
     
@@ -69,7 +65,6 @@ def count_images_in_directory(directory_path: str) -> int:
     return count
 
 def load_size_based_config(model_type: str, is_style: bool, dataset_size: int) -> dict:
-    """Load size-based configuration based on dataset image count"""
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_dir = os.path.join(script_dir, "lrs")
     
@@ -103,7 +98,6 @@ def load_size_based_config(model_type: str, is_style: bool, dataset_size: int) -
         return None
 
 def get_config_for_model(lrs_config: dict, model_name: str) -> dict:
-    """Get configuration overrides based on model name."""
     if not isinstance(lrs_config, dict):
         return None
 
@@ -119,7 +113,6 @@ def get_config_for_model(lrs_config: dict, model_name: str) -> dict:
     return None
 
 def load_lrs_config(model_type: str, is_style: bool) -> dict:
-    """Load the appropriate LRS configuration based on model type and training type"""
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_dir = os.path.join(script_dir, "lrs")
 
@@ -176,6 +169,7 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
             config = toml.load(file)
 
         lrs_config = load_lrs_config(model_type, is_style)
+
         if lrs_config:
             model_hash = hash_model(model_name)
             lrs_settings = get_config_for_model(lrs_config, model_hash)
@@ -195,7 +189,6 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
         else:
             print("Warning: Could not load LRS configuration, using default values", flush=True)
 
-        # Update config
         network_config_person = {
             "stabilityai/stable-diffusion-xl-base-1.0": 235,
             "Lykon/dreamshaper-xl-1-0": 235,
