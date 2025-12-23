@@ -6,9 +6,6 @@
             "max": 15,
             "config": {
                 "train_batch_size": 6,
-                "learning_rate": 6e-4,
-                "unet_lr": 6e-4,
-                "text_encoder_lr": 6e-5,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 150,
                 "network_dim": 32,
@@ -20,9 +17,6 @@
             "max": 30,
             "config": {
                 "train_batch_size": 6,
-                "learning_rate": 6e-4,
-                "unet_lr": 6e-4,
-                "text_encoder_lr": 6e-5,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 150,
                 "network_dim": 32,
@@ -34,9 +28,6 @@
             "max": 50,
             "config": {
                 "train_batch_size": 6,
-                "learning_rate": 6e-4,
-                "unet_lr": 6e-4,
-                "text_encoder_lr": 6e-5,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 300,
                 "network_dim": 32,
@@ -48,9 +39,6 @@
             "max": 80,
             "config": {
                 "train_batch_size": 6,
-                "learning_rate": 6e-4,
-                "unet_lr": 6e-4,
-                "text_encoder_lr": 6e-5,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 300,
                 "network_dim": 64,
@@ -62,9 +50,6 @@
             "max": 1000,
             "config": {
                 "train_batch_size": 6,
-                "learning_rate": 3e-4,
-                "unet_lr": 3e-4,
-                "text_encoder_lr": 3e-5,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 300,
                 "network_dim": 64,
