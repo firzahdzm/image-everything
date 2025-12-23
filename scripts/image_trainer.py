@@ -319,8 +319,7 @@ def run_training(model_type, config_path):
             "--num_machines", "1",
             "--num_cpu_threads_per_process", "2",
             f"/app/sd-script/{model_type}_train_network.py",
-            "--config_file", config_path,
-            "--fused_backward_pass",
+            "--config_file", config_path
         ]
     elif model_type == "flux":
         training_command = [
