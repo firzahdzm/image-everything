@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="5f0c9bca-9669-41e6-82b0-b772ea64cfc1"
-MODEL="John6666/nova-anime-xl-pony-v5-sdxl"
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/5505def56da89675_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251221%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251221T015129Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b006855ed6da9dd449362d10c5b4346e4e0a5ccec6d66254ec01e066a96c9dd2"
+TASK_ID="a99f887d-dac1-48aa-883c-78d298b800b4"
+MODEL="dataautogpt3/CALAMITY"
+DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/59ddb9abbf4a4348_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251221%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251221T014637Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5f120d9ad4c5e04843cc6578f0dc4f8ca6b6abc98fc1c9cb9ce5d2bceb90874"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="test_person-1"
+EXPECTED_REPO_NAME="test_style"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
