@@ -33,7 +33,7 @@ config:
       dtype: bf16
       ema_config:
         use_ema: true
-        ema_decay: 0.99
+        ema_decay: 0.995
     model:
       name_or_path: /cache/models
       arch: zimage:turbo
