@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+everything u are
+"""
+
 import argparse
 import asyncio
 import hashlib
