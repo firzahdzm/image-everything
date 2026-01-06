@@ -3,7 +3,8 @@ async_upload = true
 bucket_no_upscale = true
 bucket_reso_steps = 64
 cache_latents = true
-cache_latents_to_disk = true
+cache_latents_to_disk = false
+vae_batch_size = 8
 caption_extension = ".txt"
 dynamo_backend = "no"
 enable_bucket = true
@@ -17,7 +18,10 @@ huggingface_repo_visibility = "public"
 huggingface_token = ""
 
 max_bucket_reso = 2048
-max_data_loader_n_workers = 2
+max_data_loader_n_workers = 8
+persistent_data_loader_workers = true
+pin_memory = true
+
 max_grad_norm = 1
 max_token_length = 75
 min_bucket_reso = 256
@@ -35,7 +39,8 @@ save_precision = "bf16"
 full_fp16 = false
 train_data_dir = "img"
 training_comment = ""
-xformers = true
+xformers = false
+sdpa = true 
 
 max_train_epochs = 25
 save_every_n_epochs = 5
