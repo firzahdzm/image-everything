@@ -332,6 +332,12 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
                     config[key] = value
         
         config_path = os.path.join(train_cst.IMAGE_CONTAINER_CONFIG_SAVE_PATH, f"{task_id}.toml")
+        
+        # Remove old config if exists to force regeneration
+        if os.path.exists(config_path):
+            os.remove(config_path)
+            print(f"Removed old config at {config_path}", flush=True)
+        
         save_config_toml(config, config_path)
         print(f"config is {config}", flush=True)
         print(f"Created config at {config_path}", flush=True)
