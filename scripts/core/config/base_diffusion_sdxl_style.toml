@@ -17,7 +17,7 @@ huggingface_repo_visibility = "public"
 huggingface_token = ""
 
 max_bucket_reso = 2048
-max_data_loader_n_workers = 2
+max_data_loader_n_workers = 4
 max_grad_norm = 1
 max_token_length = 75
 min_bucket_reso = 256
