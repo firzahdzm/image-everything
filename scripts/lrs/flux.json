@@ -1,6 +1,6 @@
 {
     "default": {
-        "max_train_steps": 600
+        "max_train_steps": 3000
     },
     "data": {
         "6445f395eb2cbcb40cec7bda29dd19c6ee0beb4660ee5fbc2556ed35920cd6b2": {},

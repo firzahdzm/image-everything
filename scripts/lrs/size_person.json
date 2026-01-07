@@ -5,9 +5,9 @@
             "min": 1,
             "max": 30,
             "config": {
-                "train_batch_size": 16,
-                "max_train_epochs": 110,
-                "save_every_n_epochs": 10,
+                "train_batch_size": 4,
+                "max_train_epochs": 250,
+                "save_every_n_epochs": 25,
                 "network_dim": 128,
                 "network_alpha": 128
             }
