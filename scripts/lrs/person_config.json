@@ -121,7 +121,15 @@
             "max_train_epochs": 30
         },
         "9177dab379e14f76c500ad2246352fd9387f11e2f57e2973bf9ada4d7cd4c962": {
-            "max_train_epochs": 30
+            "prior_loss_weight": 0.7,
+            "max_train_epochs": 30,
+            "optimizer_args": [
+                "decouple=True",
+                "d_coef=1",
+                "weight_decay=0.001",
+                "use_bias_correction=True",
+                "safeguard_warmup=True"
+            ]
         },
         "c6efeaf411754e65b3e2395640d5f90ac6150a1d82e4b3caf8df566aa406609c": {},
         "87a20676586c53891563895be0408c6109b83f1d891700dd6ff6c02a25cd6c47": {
