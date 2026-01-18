@@ -57,28 +57,27 @@
             "min_snr_gamma": 7
         },
         "7637327a8414801bf0bb4d6d1b574dd95c05525165ee271cc085b64f89c8cba8": {
-            "prior_loss_weight": 0.8,
-            "max_train_epochs": 21,
+            "prior_loss_weight": 0.3,
+            "min_snr_gamma": 5,
+            "max_grad_norm": 1.0,
+            "scale_weight_norms": 1,
             "optimizer_args": [
                 "decouple=True",
-                "d_coef=1",
-                "weight_decay=0.001",
+                "d_coef=0.9",
+                "weight_decay=0.05",
                 "use_bias_correction=True",
                 "safeguard_warmup=True"
             ],
-            "min_snr_gamma": 7
+            "network_args": [
+                "conv_dim=64",
+                "conv_alpha=64",
+                "dropout=0.05",
+                "rank_dropout=0.1",
+                "module_dropout=0.0"
+            ]
         },
         "158598455e814319c65ccbf8bbae049200601b2ac4fb1429fed6158f2f5ac8bd": {
-            "prior_loss_weight": 0.8,
-            "max_train_epochs": 21,
-            "optimizer_args": [
-                "decouple=True",
-                "d_coef=1",
-                "weight_decay=0.001",
-                "use_bias_correction=True",
-                "safeguard_warmup=True"
-            ],
-            "min_snr_gamma": 7
+            "max_train_epochs": 30
         },
         "7d6474f05dc6940ad31182d1359e7f6390dfa92a0cbae20597bfd86d415bd0fd": {},
         "0b7169dc27a95818a024b479271167dd8bb221ee1cebf58a683378927eb447c3": {},
@@ -138,7 +137,18 @@
             "lr_warmup_steps": 150
         },
         "eb324bfcad14e8f1d46346f46ae7af7d3e58c3babbc1f699ee7c61baab291369": {},
-        "162748f97994bc2ffaafdcfd900e06e245e85a9826fb77aa8568846fb6b3f15d": {},
+        "162748f97994bc2ffaafdcfd900e06e245e85a9826fb77aa8568846fb6b3f15d": {
+            "prior_loss_weight": 0.8,
+            "max_train_epochs": 21,
+            "optimizer_args": [
+                "decouple=True",
+                "d_coef=1",
+                "weight_decay=0.001",
+                "use_bias_correction=True",
+                "safeguard_warmup=True"
+            ],
+            "min_snr_gamma": 7
+        },
         "46bc6498a086646889d92058d7e50398177841349bfce3181bdb5846849354b7": {
             "prior_loss_weight": 0.8,
             "max_train_epochs": 21,
